@@ -1,0 +1,112 @@
+@import 'tailwindcss';
+
+/*
+ * LinkSpark — Tasarım Sistemi (dark_premium)
+ * Tailwind v4 CSS-first config. SADECE --color-* ve --font-family-* tanımlanır.
+ * --spacing-*, --radius-*, --animate-* Tailwind varsayılanları KORUNUR (learnings).
+ */
+@theme {
+  --color-primary: #6366f1;
+  --color-primary-hover: #4f46e5;
+  --color-secondary: #22d3ee;
+  --color-background: #0a0b14;
+  --color-surface: #13141f;
+  --color-surface-elevated: #1c1d2b;
+  --color-foreground: #f1f5f9;
+  --color-muted: #94a3b8;
+  --color-accent: #f59e0b;
+  --color-error: #ef4444;
+  --color-success: #22c55e;
+  --color-warning: #eab308;
+  --color-border: #252736;
+
+  /* Fontlar next/font (Outfit + Inter + JetBrains Mono) ile değişkenlere bağlanır */
+  --font-family-sans: var(--font-inter), 'Inter', system-ui, sans-serif;
+  --font-family-display: var(--font-outfit), 'Outfit', system-ui, sans-serif;
+  --font-family-mono: var(--font-jetbrains), 'JetBrains Mono', monospace;
+}
+
+/* Açık tema opsiyonel override (next-themes .light sınıfı) */
+.light {
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface-elevated: #ffffff;
+  --color-foreground: #0f172a;
+  --color-muted: #475569;
+  --color-border: #e2e8f0;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-family-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Tutarlı, erişilebilir klavye odağı (a11y) */
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--color-primary) 35%, transparent);
+    color: var(--color-foreground);
+  }
+}
+
+@layer utilities {
+  /* Premium cam morfizm yüzeyi (glassmorphism) */
+  .glass {
+    background: color-mix(in srgb, var(--color-surface) 70%, transparent);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid color-mix(in srgb, var(--color-border) 80%, transparent);
+  }
+
+  /* Marka gradyanlı metin */
+  .text-gradient {
+    background: linear-gradient(
+      135deg,
+      var(--color-primary) 0%,
+      var(--color-secondary) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, color-mix(in srgb, var(--color-border) 45%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in srgb, var(--color-border) 45%, transparent) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  .glow {
+    box-shadow: 0 0 24px rgba(99, 102, 241, 0.18);
+  }
+
+  .shadow-elevated {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+}

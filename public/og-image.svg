@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none" role="img" aria-label="LinkSpark — Yapay Zeka Destekli Link Yönetimi">
+  <title>LinkSpark — Yapay Zeka Destekli Link Yönetimi &amp; Dönüşüm Takibi</title>
+  <defs>
+    <linearGradient id="og-bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0b14"/>
+      <stop offset="1" stop-color="#13141f"/>
+    </linearGradient>
+    <linearGradient id="og-brand" x1="120" y1="150" x2="320" y2="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="og-glow" cx="0.78" cy="0.28" r="0.6">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="og-grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" fill="none" stroke="#252736" stroke-width="1" opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#og-bg)"/>
+  <rect width="1200" height="630" fill="url(#og-grid)"/>
+  <rect width="1200" height="630" fill="url(#og-glow)"/>
+
+  <!-- Mark -->
+  <g transform="translate(96 96)">
+    <rect x="1.5" y="1.5" width="105" height="105" rx="28" fill="url(#og-brand)" opacity="0.12"/>
+    <g transform="translate(18 18) scale(3)" stroke="url(#og-brand)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M9 12h6"/>
+      <path d="M8.5 17H6a5 5 0 0 1 0-10h2.5"/>
+      <path d="M15.5 7H18a5 5 0 0 1 0 10h-2.5"/>
+    </g>
+    <path d="M92 8l4.4 10.6L107 23l-10.6 4.4L92 38l-4.4-10.6L77 23l10.6-4.4z" fill="#f59e0b"/>
+  </g>
+
+  <text x="222" y="170" font-family="Outfit, system-ui, sans-serif" font-size="58" font-weight="700" letter-spacing="-1">
+    <tspan fill="#f1f5f9">Link</tspan><tspan fill="url(#og-brand)">Spark</tspan>
+  </text>
+
+  <!-- Headline -->
+  <text x="96" y="320" font-family="Outfit, system-ui, sans-serif" font-size="74" font-weight="700" fill="#f1f5f9" letter-spacing="-2">Yapay Zeka Destekli</text>
+  <text x="96" y="404" font-family="Outfit, system-ui, sans-serif" font-size="74" font-weight="700" letter-spacing="-2" fill="url(#og-brand)">Link Yönetimi</text>
+
+  <!-- Subhead -->
+  <text x="96" y="470" font-family="Inter, system-ui, sans-serif" font-size="29" font-weight="400" fill="#94a3b8">Markalı kısa linkler · Gerçek zamanlı analitik · Dinamik QR · AI UTM sihirbazı</text>
+
+  <!-- Feature pills -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="500">
+    <g>
+      <rect x="96" y="520" width="232" height="56" rx="28" fill="#1c1d2b" stroke="#252736"/>
+      <circle cx="126" cy="548" r="5" fill="#6366f1"/>
+      <text x="144" y="556" fill="#f1f5f9">Özel Alan Adı + SSL</text>
+    </g>
+    <g>
+      <rect x="344" y="520" width="248" height="56" rx="28" fill="#1c1d2b" stroke="#252736"/>
+      <circle cx="374" cy="548" r="5" fill="#22d3ee"/>
+      <text x="392" y="556" fill="#f1f5f9">Derin Analitik Paneli</text>
+    </g>
+    <g>
+      <rect x="608" y="520" width="226" height="56" rx="28" fill="#1c1d2b" stroke="#252736"/>
+      <circle cx="638" cy="548" r="5" fill="#f59e0b"/>
+      <text x="656" y="556" fill="#f1f5f9">Piksel Rotasyonu</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="360" viewBox="0 0 1040 360" fill="none" role="img" aria-label="LinkSpark nasıl çalışır — 3 adım">
+  <title>LinkSpark Nasıl Çalışır</title>
+  <desc>Üç adımda link yönetimi: oluştur, izle, optimize et.</desc>
+  <defs>
+    <linearGradient id="ig-brand" x1="0" y1="0" x2="1040" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <style>
+      .ig-step  { font-family: 'Outfit', system-ui, sans-serif; font-weight: 700; font-size: 24px; }
+      .ig-body  { font-family: 'Inter', system-ui, sans-serif; font-weight: 400; font-size: 15px; }
+      .ig-num   { font-family: 'Outfit', system-ui, sans-serif; font-weight: 700; font-size: 18px; fill: #ffffff; }
+      .ig-fg    { fill: #0f172a; }
+      .ig-mut   { fill: #475569; }
+      @media (prefers-color-scheme: dark) {
+        .ig-fg  { fill: #f1f5f9; }
+        .ig-mut { fill: #94a3b8; }
+      }
+    </style>
+  </defs>
+
+  <!-- Connector line -->
+  <path d="M250 90 H400 M640 90 H790" stroke="url(#ig-brand)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="2 10" opacity="0.6"/>
+
+  <!-- STEP 1 — Create -->
+  <g transform="translate(40 30)">
+    <rect x="0" y="0" width="210" height="300" rx="22" fill="url(#ig-brand)" opacity="0.06"/>
+    <rect x="0.75" y="0.75" width="208.5" height="298.5" rx="21.25" fill="none" stroke="url(#ig-brand)" stroke-opacity="0.25"/>
+    <circle cx="105" cy="60" r="26" fill="url(#ig-brand)"/>
+    <text x="105" y="67" text-anchor="middle" class="ig-num">1</text>
+    <!-- link icon -->
+    <g transform="translate(80 108) scale(1.6)" stroke="url(#ig-brand)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M9 12h6"/>
+      <path d="M8.5 17H6a5 5 0 0 1 0-10h2.5"/>
+      <path d="M15.5 7H18a5 5 0 0 1 0 10h-2.5"/>
+    </g>
+    <text x="105" y="210" text-anchor="middle" class="ig-step ig-fg">Oluştur</text>
+    <text x="105" y="240" text-anchor="middle" class="ig-body ig-mut">Markalı kısa linkini</text>
+    <text x="105" y="260" text-anchor="middle" class="ig-body ig-mut">ve QR kodunu saniyeler</text>
+    <text x="105" y="280" text-anchor="middle" class="ig-body ig-mut">içinde üret.</text>
+  </g>
+
+  <!-- STEP 2 — Track -->
+  <g transform="translate(415 30)">
+    <rect x="0" y="0" width="210" height="300" rx="22" fill="url(#ig-brand)" opacity="0.06"/>
+    <rect x="0.75" y="0.75" width="208.5" height="298.5" rx="21.25" fill="none" stroke="url(#ig-brand)" stroke-opacity="0.25"/>
+    <circle cx="105" cy="60" r="26" fill="url(#ig-brand)"/>
+    <text x="105" y="67" text-anchor="middle" class="ig-num">2</text>
+    <!-- bar chart icon -->
+    <g transform="translate(75 105)" stroke="url(#ig-brand)" stroke-width="3.4" stroke-linecap="round" fill="none">
+      <path d="M3 45V3"/>
+      <path d="M3 45H48"/>
+      <path d="M14 45V30"/>
+      <path d="M27 45V18"/>
+      <path d="M40 45V9"/>
+    </g>
+    <text x="105" y="210" text-anchor="middle" class="ig-step ig-fg">İzle</text>
+    <text x="105" y="240" text-anchor="middle" class="ig-body ig-mut">Coğrafya, cihaz ve</text>
+    <text x="105" y="260" text-anchor="middle" class="ig-body ig-mut">referrer verilerini gerçek</text>
+    <text x="105" y="280" text-anchor="middle" class="ig-body ig-mut">zamanlı takip et.</text>
+  </g>
+
+  <!-- STEP 3 — Optimize -->
+  <g transform="translate(790 30)">
+    <rect x="0" y="0" width="210" height="300" rx="22" fill="url(#ig-brand)" opacity="0.06"/>
+    <rect x="0.75" y="0.75" width="208.5" height="298.5" rx="21.25" fill="none" stroke="url(#ig-brand)" stroke-opacity="0.25"/>
+    <circle cx="105" cy="60" r="26" fill="url(#ig-brand)"/>
+    <text x="105" y="67" text-anchor="middle" class="ig-num">3</text>
+    <!-- spark / AI icon -->
+    <g transform="translate(80 102)">
+      <path d="M25 4l4.4 10.6L40 19l-10.6 4.4L25 34l-4.4-10.6L10 19l10.6-4.4z" fill="#f59e0b"/>
+      <path d="M42 30l1.6 3.9 3.9 1.6-3.9 1.6L42 41l-1.6-3.9L36.5 35.5l3.9-1.6z" fill="url(#ig-brand)"/>
+    </g>
+    <text x="105" y="210" text-anchor="middle" class="ig-step ig-fg">Optimize Et</text>
+    <text x="105" y="240" text-anchor="middle" class="ig-body ig-mut">AI destekli UTM ve</text>
+    <text x="105" y="260" text-anchor="middle" class="ig-body ig-mut">kampanya önerileriyle</text>
+    <text x="105" y="280" text-anchor="middle" class="ig-body ig-mut">dönüşümü artır.</text>
+  </g>
+</svg>

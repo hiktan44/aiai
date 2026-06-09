@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="48" viewBox="0 0 220 48" fill="none" role="img" aria-label="LinkSpark">
+  <title>LinkSpark</title>
+  <defs>
+    <linearGradient id="ls-brand" x1="4" y1="6" x2="44" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <style>
+      .ls-word { fill: #0f172a; }
+      @media (prefers-color-scheme: dark) { .ls-word { fill: #f1f5f9; } }
+    </style>
+  </defs>
+
+  <!-- Mark: chain-link forming the "link", with an accent spark -->
+  <g transform="translate(4 4)">
+    <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="11" fill="url(#ls-brand)" opacity="0.10"/>
+    <g stroke="url(#ls-brand)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M16 24h8"/>
+      <path d="M15 31h-3a7 7 0 0 1 0-14h3"/>
+      <path d="M25 17h3a7 7 0 0 1 0 14h-3"/>
+    </g>
+    <!-- Spark -->
+    <path d="M31 3.5l1.9 4.6 4.6 1.9-4.6 1.9-1.9 4.6-1.9-4.6L24.5 10l4.6-1.9z" fill="#f59e0b"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="56" y="32" font-family="Outfit, system-ui, sans-serif" font-size="25" font-weight="700" letter-spacing="-0.5">
+    <tspan class="ls-word">Link</tspan><tspan fill="url(#ls-brand)">Spark</tspan>
+  </text>
+</svg>

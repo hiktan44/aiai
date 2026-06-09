@@ -1,0 +1,44 @@
+{
+  "name": "linkspark",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LinkSpark — Yapay zeka destekli link yönetimi & dönüşüm takibi SaaS platformu.",
+  "packageManager": "pnpm@8.15.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "unset __NEXT_PRIVATE_STANDALONE_CONFIG && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.48.0",
+    "zod": "^3.24.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.0",
+    "lucide-react": "^0.469.0",
+    "qrcode": "^1.5.4",
+    "nanoid": "^5.0.9",
+    "date-fns": "^4.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "@types/node": "^20.17.12",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "@types/qrcode": "^1.5.5",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "15.1.6",
+    "@eslint/eslintrc": "^3.2.0",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/postcss": "^4.0.0",
+    "postcss": "^8.5.1"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "linkspark",
+  "description": "LinkSpark — Yapay zeka destekli link yönetimi & dönüşüm takibi SaaS platformu.",
+  "build": {
+    "type": "dockerfile",
+    "dockerfile": "Dockerfile",
+    "context": ".",
+    "packageManager": "pnpm"
+  },
+  "deploy": {
+    "port": 3000,
+    "replicas": 1,
+    "healthcheck": {
+      "path": "/api/health",
+      "method": "GET",
+      "expectedStatus": 200,
+      "interval": 30,
+      "timeout": 5,
+      "retries": 3,
+      "startPeriod": 20
+    },
+    "restartPolicy": "unless-stopped"
+  },
+  "env": [
+    { "key": "NEXT_PUBLIC_SUPABASE_URL", "required": true, "description": "Supabase proje URL'si" },
+    { "key": "NEXT_PUBLIC_SUPABASE_ANON_KEY", "required": true, "description": "Supabase anon/public anahtarı" },
+    { "key": "SUPABASE_SERVICE_ROLE_KEY", "required": true, "secret": true, "description": "Sunucu tarafı yüksek yetkili anahtar — client'a sızdırılmaz" },
+    { "key": "NEXT_PUBLIC_APP_URL", "required": true, "description": "Kısa link temel adresi" },
+    { "key": "SECRETS_ENCRYPTION_KEY", "required": false, "secret": true, "description": "Piksel token AES-GCM şifreleme anahtarı" },
+    { "key": "IP_HASH_SALT", "required": false, "secret": true, "description": "KVKK IP hash tuzu" },
+    { "key": "STRIPE_SECRET_KEY", "required": false, "secret": true, "description": "Stripe gizli anahtarı" },
+    { "key": "STRIPE_WEBHOOK_SECRET", "required": false, "secret": true, "description": "Stripe webhook imza doğrulama" },
+    { "key": "ANTHROPIC_API_KEY", "required": false, "secret": true, "description": "AI UTM sihirbazı" }
+  ]
+}
